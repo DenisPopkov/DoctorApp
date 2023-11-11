@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E871AB4F2AFFAEC8000A837D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E871AB4E2AFFAEC8000A837D /* Localizable.xcstrings */; };
+		E871AB572AFFB2D4000A837D /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E871AB522AFFB2D4000A837D /* Poppins-Black.ttf */; };
+		E871AB582AFFB2D4000A837D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E871AB532AFFB2D4000A837D /* Poppins-Regular.ttf */; };
+		E871AB592AFFB2D4000A837D /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E871AB542AFFB2D4000A837D /* Poppins-ExtraBold.ttf */; };
+		E871AB5A2AFFB2D4000A837D /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E871AB552AFFB2D4000A837D /* Poppins-Medium.ttf */; };
+		E871AB5B2AFFB2D4000A837D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E871AB562AFFB2D4000A837D /* Poppins-Bold.ttf */; };
 		E8C77DBC2AFF99BB0076DFDE /* DoctorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */; };
 		E8C77DBE2AFF99BB0076DFDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */; };
 		E8C77DC02AFF99BC0076DFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DBF2AFF99BC0076DFDE /* Assets.xcassets */; };
@@ -15,11 +20,6 @@
 		E8C77DCD2AFF99BC0076DFDE /* DoctorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DCC2AFF99BC0076DFDE /* DoctorAppTests.swift */; };
 		E8C77DD72AFF99BC0076DFDE /* DoctorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DD62AFF99BC0076DFDE /* DoctorAppUITests.swift */; };
 		E8C77DD92AFF99BC0076DFDE /* DoctorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DD82AFF99BC0076DFDE /* DoctorAppUITestsLaunchTests.swift */; };
-		E8C77DEF2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DEA2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf */; };
-		E8C77DF02AFFA6CB0076DFDE /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DEB2AFFA6CB0076DFDE /* PoppinsRegular.ttf */; };
-		E8C77DF12AFFA6CB0076DFDE /* PoppinsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DEC2AFFA6CB0076DFDE /* PoppinsBold.ttf */; };
-		E8C77DF22AFFA6CB0076DFDE /* PoppinsBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DED2AFFA6CB0076DFDE /* PoppinsBlack.ttf */; };
-		E8C77DF32AFFA6CB0076DFDE /* PoppinsMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DEE2AFFA6CB0076DFDE /* PoppinsMedium.ttf */; };
 		E8C77DF72AFFA8EC0076DFDE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DF62AFFA8EC0076DFDE /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,11 @@
 
 /* Begin PBXFileReference section */
 		E871AB4E2AFFAEC8000A837D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E871AB522AFFB2D4000A837D /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		E871AB532AFFB2D4000A837D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E871AB542AFFB2D4000A837D /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E871AB552AFFB2D4000A837D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		E871AB562AFFB2D4000A837D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		E8C77DB82AFF99BB0076DFDE /* DoctorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppApp.swift; sourceTree = "<group>"; };
 		E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,11 +57,6 @@
 		E8C77DD22AFF99BC0076DFDE /* DoctorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C77DD62AFF99BC0076DFDE /* DoctorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppUITests.swift; sourceTree = "<group>"; };
 		E8C77DD82AFF99BC0076DFDE /* DoctorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E8C77DEA2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsExtraBold.ttf; sourceTree = "<group>"; };
-		E8C77DEB2AFFA6CB0076DFDE /* PoppinsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsRegular.ttf; sourceTree = "<group>"; };
-		E8C77DEC2AFFA6CB0076DFDE /* PoppinsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBold.ttf; sourceTree = "<group>"; };
-		E8C77DED2AFFA6CB0076DFDE /* PoppinsBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBlack.ttf; sourceTree = "<group>"; };
-		E8C77DEE2AFFA6CB0076DFDE /* PoppinsMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsMedium.ttf; sourceTree = "<group>"; };
 		E8C77DF42AFFA7040076DFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E8C77DF62AFFA8EC0076DFDE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,11 +149,11 @@
 		E8C77DE92AFFA6B30076DFDE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E8C77DED2AFFA6CB0076DFDE /* PoppinsBlack.ttf */,
-				E8C77DEC2AFFA6CB0076DFDE /* PoppinsBold.ttf */,
-				E8C77DEA2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf */,
-				E8C77DEE2AFFA6CB0076DFDE /* PoppinsMedium.ttf */,
-				E8C77DEB2AFFA6CB0076DFDE /* PoppinsRegular.ttf */,
+				E871AB522AFFB2D4000A837D /* Poppins-Black.ttf */,
+				E871AB562AFFB2D4000A837D /* Poppins-Bold.ttf */,
+				E871AB542AFFB2D4000A837D /* Poppins-ExtraBold.ttf */,
+				E871AB552AFFB2D4000A837D /* Poppins-Medium.ttf */,
+				E871AB532AFFB2D4000A837D /* Poppins-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -272,13 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C77DC32AFF99BC0076DFDE /* Preview Assets.xcassets in Resources */,
-				E8C77DF22AFFA6CB0076DFDE /* PoppinsBlack.ttf in Resources */,
 				E871AB4F2AFFAEC8000A837D /* Localizable.xcstrings in Resources */,
 				E8C77DC02AFF99BC0076DFDE /* Assets.xcassets in Resources */,
-				E8C77DEF2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf in Resources */,
-				E8C77DF02AFFA6CB0076DFDE /* PoppinsRegular.ttf in Resources */,
-				E8C77DF12AFFA6CB0076DFDE /* PoppinsBold.ttf in Resources */,
-				E8C77DF32AFFA6CB0076DFDE /* PoppinsMedium.ttf in Resources */,
+				E871AB572AFFB2D4000A837D /* Poppins-Black.ttf in Resources */,
+				E871AB592AFFB2D4000A837D /* Poppins-ExtraBold.ttf in Resources */,
+				E871AB5B2AFFB2D4000A837D /* Poppins-Bold.ttf in Resources */,
+				E871AB5A2AFFB2D4000A837D /* Poppins-Medium.ttf in Resources */,
+				E871AB582AFFB2D4000A837D /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

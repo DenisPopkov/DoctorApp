@@ -17,15 +17,16 @@ struct HeaderView: View {
             VStack(alignment: .leading) {
                 Text(NSLocalizedString("greeting_first_part", comment: ""))
                     .foregroundColor(Color("PurpleTextColor"))
-                    .font(.custom("PoppinsRegular", size: 16))
-                    .padding(.bottom, 6)
+                    .font(.custom("Poppins-Regular", size: 16, relativeTo: .body))
                 
                 Text(NSLocalizedString("greeting_second_part", comment: "") + " \(userName)")
                     .foregroundColor(Color("BlackTextColor"))
-                    .font(.custom("PoppinsBold", size: 20))
+                    .font(.custom("Poppins-Bold", size: 20, relativeTo: .title))
             }
             Spacer()
             Image(userLogoUrl)
+                .resizable()
+                .frame(width: 56, height: 56)
         }
     }
 }

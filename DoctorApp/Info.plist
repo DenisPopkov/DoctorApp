@@ -8,11 +8,11 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>PoppinsBlack</string>
-		<string>PoppinsBold</string>
-		<string>PoppinsExtraBold</string>
-		<string>PoppinsMedium</string>
-		<string>PoppinsRegular</string>
+		<string>Poppins-Black.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-ExtraBold.ttf</string>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
