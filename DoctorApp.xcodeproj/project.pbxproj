@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E871AB4F2AFFAEC8000A837D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E871AB4E2AFFAEC8000A837D /* Localizable.xcstrings */; };
 		E8C77DBC2AFF99BB0076DFDE /* DoctorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */; };
 		E8C77DBE2AFF99BB0076DFDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */; };
 		E8C77DC02AFF99BC0076DFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DBF2AFF99BC0076DFDE /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		E8C77DCD2AFF99BC0076DFDE /* DoctorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DCC2AFF99BC0076DFDE /* DoctorAppTests.swift */; };
 		E8C77DD72AFF99BC0076DFDE /* DoctorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DD62AFF99BC0076DFDE /* DoctorAppUITests.swift */; };
 		E8C77DD92AFF99BC0076DFDE /* DoctorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DD82AFF99BC0076DFDE /* DoctorAppUITestsLaunchTests.swift */; };
-		E8C77DE62AFFA09C0076DFDE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DE52AFFA09C0076DFDE /* Localizable.xcstrings */; };
 		E8C77DEF2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DEA2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf */; };
 		E8C77DF02AFFA6CB0076DFDE /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DEB2AFFA6CB0076DFDE /* PoppinsRegular.ttf */; };
 		E8C77DF12AFFA6CB0076DFDE /* PoppinsBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DEC2AFFA6CB0076DFDE /* PoppinsBold.ttf */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E871AB4E2AFFAEC8000A837D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E8C77DB82AFF99BB0076DFDE /* DoctorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppApp.swift; sourceTree = "<group>"; };
 		E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		E8C77DD22AFF99BC0076DFDE /* DoctorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C77DD62AFF99BC0076DFDE /* DoctorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppUITests.swift; sourceTree = "<group>"; };
 		E8C77DD82AFF99BC0076DFDE /* DoctorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E8C77DE52AFFA09C0076DFDE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E8C77DEA2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsExtraBold.ttf; sourceTree = "<group>"; };
 		E8C77DEB2AFFA6CB0076DFDE /* PoppinsRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsRegular.ttf; sourceTree = "<group>"; };
 		E8C77DEC2AFFA6CB0076DFDE /* PoppinsBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoppinsBold.ttf; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 		E8C77DAF2AFF99BB0076DFDE = {
 			isa = PBXGroup;
 			children = (
+				E871AB4E2AFFAEC8000A837D /* Localizable.xcstrings */,
 				E8C77DE92AFFA6B30076DFDE /* Fonts */,
-				E8C77DE52AFFA09C0076DFDE /* Localizable.xcstrings */,
 				E8C77DBA2AFF99BB0076DFDE /* DoctorApp */,
 				E8C77DCB2AFF99BC0076DFDE /* DoctorAppTests */,
 				E8C77DD52AFF99BC0076DFDE /* DoctorAppUITests */,
@@ -273,9 +273,9 @@
 			files = (
 				E8C77DC32AFF99BC0076DFDE /* Preview Assets.xcassets in Resources */,
 				E8C77DF22AFFA6CB0076DFDE /* PoppinsBlack.ttf in Resources */,
+				E871AB4F2AFFAEC8000A837D /* Localizable.xcstrings in Resources */,
 				E8C77DC02AFF99BC0076DFDE /* Assets.xcassets in Resources */,
 				E8C77DEF2AFFA6CB0076DFDE /* PoppinsExtraBold.ttf in Resources */,
-				E8C77DE62AFFA09C0076DFDE /* Localizable.xcstrings in Resources */,
 				E8C77DF02AFFA6CB0076DFDE /* PoppinsRegular.ttf in Resources */,
 				E8C77DF12AFFA6CB0076DFDE /* PoppinsBold.ttf in Resources */,
 				E8C77DF32AFFA6CB0076DFDE /* PoppinsMedium.ttf in Resources */,

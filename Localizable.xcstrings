@@ -68,8 +68,6 @@
       }
     },
     "greeting_first_part" : {
-      "comment" : "Greeting message to user on main screen",
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -80,7 +78,6 @@
       }
     },
     "greeting_second_part" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -173,7 +170,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dr. Joseph Brostito"
+            "value" : "Dr. Joseph Brosito"
           }
         }
       }
