@@ -28,9 +28,7 @@ struct HeaderView: View {
                 Image(userLogoUrl)
                     .resizable()
                     .frame(width: 56, height: 56)
-            }.padding(.bottom, 36)
-            
-            CardView()
+            }
         }
     }
 }

@@ -14,6 +14,7 @@
 		E871AB5A2AFFB2D4000A837D /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E871AB552AFFB2D4000A837D /* Poppins-Medium.ttf */; };
 		E871AB5B2AFFB2D4000A837D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E871AB562AFFB2D4000A837D /* Poppins-Bold.ttf */; };
 		E871AB5D2AFFB3CF000A837D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E871AB5C2AFFB3CF000A837D /* CardView.swift */; };
+		E871AB5F2AFFBA65000A837D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E871AB5E2AFFBA65000A837D /* SearchView.swift */; };
 		E8C77DBC2AFF99BB0076DFDE /* DoctorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */; };
 		E8C77DBE2AFF99BB0076DFDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */; };
 		E8C77DC02AFF99BC0076DFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DBF2AFF99BC0076DFDE /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		E871AB552AFFB2D4000A837D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		E871AB562AFFB2D4000A837D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		E871AB5C2AFFB3CF000A837D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E871AB5E2AFFBA65000A837D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E8C77DB82AFF99BB0076DFDE /* DoctorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppApp.swift; sourceTree = "<group>"; };
 		E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				E8C77DF62AFFA8EC0076DFDE /* HeaderView.swift */,
 				E871AB5C2AFFB3CF000A837D /* CardView.swift */,
+				E871AB5E2AFFBA65000A837D /* SearchView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E871AB5F2AFFBA65000A837D /* SearchView.swift in Sources */,
 				E8C77DBE2AFF99BB0076DFDE /* ContentView.swift in Sources */,
 				E8C77DF72AFFA8EC0076DFDE /* HeaderView.swift in Sources */,
 				E871AB5D2AFFB3CF000A837D /* CardView.swift in Sources */,

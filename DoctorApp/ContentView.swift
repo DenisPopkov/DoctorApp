@@ -10,11 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack() {
-            HeaderView()
-            Spacer()
+            HeaderView().padding(.bottom, 36)
+            CardView().padding(.bottom, 20)
+            SearchView().padding(.bottom, 24)
         }
         .padding([.leading, .trailing], 24)
         .padding(.top, 20)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
