@@ -18,6 +18,11 @@ struct ContentView: View {
                 .foregroundColor(Color("NearBlackTextColor"))
                 .font(.custom("Poppins-SemiBold", size: 16, relativeTo: .title3))
                 .padding(.top, 32)
+            CardView(
+                cardBackgroundColor: .white, doctorNameColor: Color("NearBlackTextColor"), doctorDegreeColor: Color("PurpleTextColor"), doctorImageUrl: "ic_second_doctor", doctorName: "second_doctor_name", doctorDegree: "second_doctor_degree", isMainCard: false
+            )
+            .shadow(color: Color("ShadowColor").opacity(0.04), radius: 10, x: 2, y: 12)
+            .padding(.bottom, 20)
         }
         .padding([.leading, .trailing], 24)
         .padding(.top, 20)
