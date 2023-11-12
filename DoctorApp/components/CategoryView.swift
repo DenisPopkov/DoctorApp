@@ -18,7 +18,7 @@ struct CategoryView: View {
     
     var body: some View {
         ScrollView(.horizontal) {
-            LazyHStack(spacing: 4) {
+            LazyHStack(spacing: 14) {
                 ForEach(categoryList, id: \.self) { category in
                     VStack {
                         ZStack {
@@ -31,8 +31,8 @@ struct CategoryView: View {
                         Text(category.categoryName)
                             .foregroundColor(Color("PurpleTextColor"))
                             .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
+                            .padding(.top, 2)
                     }
-                    Spacer()
                 }
             }
         }.frame(maxHeight: 100)

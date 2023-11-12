@@ -10,9 +10,14 @@ import SwiftUI
 struct SearchView: View {
     var body: some View {
         HStack {
-            Label(NSLocalizedString("search_label", comment: ""), systemImage: "magnifyingglass")
-                .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
-                .foregroundColor(Color("PurpleTextColor"))
+            Label {
+                Text(NSLocalizedString("search_label", comment: ""))
+                    .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
+                    .foregroundColor(Color("PurpleTextColor"))
+                    .padding(.leading, 6)
+            } icon: {
+                Image("ic_magnifier")
+            }
             Spacer()
         }
         .padding(16)

@@ -19,6 +19,7 @@
 		E871AB642AFFBD18000A837D /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E871AB632AFFBD18000A837D /* CategoryModel.swift */; };
 		E8A9EB0A2B00A8CC003FCB45 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8A9EB092B00A8CC003FCB45 /* Poppins-SemiBold.ttf */; };
 		E8A9EB0E2B00B47E003FCB45 /* TabbedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A9EB0D2B00B47E003FCB45 /* TabbedItems.swift */; };
+		E8A9EB102B00C174003FCB45 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8A9EB0F2B00C174003FCB45 /* Nunito-Bold.ttf */; };
 		E8C77DBC2AFF99BB0076DFDE /* DoctorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */; };
 		E8C77DBE2AFF99BB0076DFDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */; };
 		E8C77DC02AFF99BC0076DFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C77DBF2AFF99BC0076DFDE /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		E871AB632AFFBD18000A837D /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		E8A9EB092B00A8CC003FCB45 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		E8A9EB0D2B00B47E003FCB45 /* TabbedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedItems.swift; sourceTree = "<group>"; };
+		E8A9EB0F2B00C174003FCB45 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		E8C77DB82AFF99BB0076DFDE /* DoctorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C77DBB2AFF99BB0076DFDE /* DoctorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorAppApp.swift; sourceTree = "<group>"; };
 		E8C77DBD2AFF99BB0076DFDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		E8C77DE92AFFA6B30076DFDE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E8A9EB0F2B00C174003FCB45 /* Nunito-Bold.ttf */,
 				E8A9EB092B00A8CC003FCB45 /* Poppins-SemiBold.ttf */,
 				E871AB522AFFB2D4000A837D /* Poppins-Black.ttf */,
 				E871AB562AFFB2D4000A837D /* Poppins-Bold.ttf */,
@@ -303,6 +306,7 @@
 				E871AB572AFFB2D4000A837D /* Poppins-Black.ttf in Resources */,
 				E871AB592AFFB2D4000A837D /* Poppins-ExtraBold.ttf in Resources */,
 				E871AB5B2AFFB2D4000A837D /* Poppins-Bold.ttf in Resources */,
+				E8A9EB102B00C174003FCB45 /* Nunito-Bold.ttf in Resources */,
 				E8A9EB0A2B00A8CC003FCB45 /* Poppins-SemiBold.ttf in Resources */,
 				E871AB5A2AFFB2D4000A837D /* Poppins-Medium.ttf in Resources */,
 				E871AB582AFFB2D4000A837D /* Poppins-Regular.ttf in Resources */,

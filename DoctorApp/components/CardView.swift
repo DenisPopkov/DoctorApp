@@ -12,6 +12,7 @@ struct CardView: View {
     var cardBackgroundColor: Color = Color("BlueCardColor")
     var doctorNameColor: Color = .white
     var doctorDegreeColor: Color = .white
+    var dividerColor: Color = Color("DividerColor")
     var doctorImageUrl: String = "ic_first_doctor"
     var doctorName: String = "first_doctor_name"
     var doctorDegree: String = "first_doctor_degree"
@@ -41,13 +42,17 @@ struct CardView: View {
                 if isMainCard {
                     Image("ic_arrow")
                 } else {
-                    Label(NSLocalizedString("distance_label", comment: ""), image: "ic_location")
-                        .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
-                        .foregroundColor(Color("PurpleTextColor"))
+                    Label {
+                        Text(NSLocalizedString("distance_label", comment: ""))
+                            .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
+                            .foregroundColor(Color("PurpleTextColor"))
+                    } icon: {
+                        Image("ic_location")
+                    }
                 }
             }
             
-            Divider().overlay(Color("DividerColor"))
+            Divider().overlay(dividerColor)
             
             if isMainCard {
                 HStack {

@@ -73,10 +73,10 @@ extension MainTabbedView{
             Spacer()
             Image(imageName)
                 .renderingMode(.template)
-                .foregroundColor(isActive ? Color("TabAccentColor") : .gray)
+                .foregroundColor(isActive ? Color("TabAccentColor") : Color("TabNotActiveAccentColor"))
             if isActive {
                 Text(title)
-                    .font(.custom("Poppins-Bold", size: 14))
+                    .font(.custom("Nunito-Bold", size: 14, relativeTo: .title3))
                     .foregroundColor(isActive ? Color("TabAccentColor") : .gray)
             }
             Spacer()
