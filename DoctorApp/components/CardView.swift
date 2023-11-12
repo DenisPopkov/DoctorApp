@@ -36,7 +36,13 @@ struct CardView: View {
                         .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
                 }
                 Spacer()
-                Image("ic_arrow")
+                if isMainCard {
+                    Image("ic_arrow")
+                } else {
+                    Label(NSLocalizedString("distance_label", comment: ""), image: "ic_location")
+                        .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
+                        .foregroundColor(Color("PurpleTextColor"))
+                }
             }
             
             Divider()

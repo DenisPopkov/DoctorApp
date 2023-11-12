@@ -9,10 +9,11 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        HStack(alignment: .center, spacing: 12) {
-            Label(NSLocalizedString("search_label", comment: ""), image: "ic_magnifier")
+        HStack {
+            Label(NSLocalizedString("search_label", comment: ""), systemImage: "magnifyingglass")
                 .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
                 .foregroundColor(Color("PurpleTextColor"))
+            Spacer()
         }
         .padding(16)
         .background(Color("AccentBackgroundColor"))
