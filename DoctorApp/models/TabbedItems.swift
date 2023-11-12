@@ -53,7 +53,7 @@ struct MainTabbedView: View {
             
             ZStack {
                 HStack {
-                    ForEach((TabbedItems.allCases), id: \.self){ item in
+                    ForEach((TabbedItems.allCases), id: \.self) { item in
                         Button {
                             selectedTab = item.rawValue
                         } label: {
@@ -63,11 +63,12 @@ struct MainTabbedView: View {
                 }
             }
             .background(.white)
+            .padding([.leading, .trailing], 24)
         }
     }
 }
 
-extension MainTabbedView{
+extension MainTabbedView {
     func CustomTabItem(imageName: String, title: String, isActive: Bool) -> some View {
         HStack {
             Spacer()
@@ -82,6 +83,7 @@ extension MainTabbedView{
             Spacer()
         }
         .frame(width: isActive ? 95 : 65)
+        .frame(maxWidth: .infinity)
         .frame(height: 48)
         .background(isActive ? Color("TabViewActiveBarBackgroundColor") : .clear)
         .cornerRadius(12)
