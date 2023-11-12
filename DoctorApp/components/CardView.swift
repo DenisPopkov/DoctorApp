@@ -23,11 +23,11 @@ struct CardView: View {
             HStack {
                 Image(doctorImageUrl)
                     .resizable()
-                        .scaledToFill()
-                        .frame(width: 48, height: 48, alignment: .top)
-                        .background(.white)
-                        .clipShape(.circle)
-                        .padding(.trailing, 8)
+                    .scaledToFill()
+                    .frame(width: 48, height: 48, alignment: .top)
+                    .background(.white)
+                    .clipShape(.circle)
+                    .padding(.trailing, 8)
                 
                 VStack(alignment: .leading) {
                     Text(NSLocalizedString(doctorName, comment: ""))
