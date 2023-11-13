@@ -70,7 +70,7 @@ struct CardView: View {
                     } icon: {
                         Image("ic_clock")
                     }
-                    .padding(.leading, 30)
+                    .padding(.leading, 25)
                 }
             } else {
                 HStack {
@@ -92,7 +92,7 @@ struct CardView: View {
                             .renderingMode(.template)
                             .foregroundColor(Color("TimeItemTintColor"))
                     }
-                    .padding(.leading, 30)
+                    .padding(.leading, 25)
                 }
             }
         }
