@@ -21,13 +21,11 @@ struct CategoryView: View {
             LazyHStack(spacing: 14) {
                 ForEach(categoryList, id: \.self) { category in
                     VStack {
-                        ZStack {
-                            Image(category.imageUrl)
-                        }
-                        .padding(24)
-                        .background(Color("AccentBackgroundColor"))
-                        .cornerRadius(100)
-                        .clipShape(.circle)
+                        Image(category.imageUrl)
+                            .padding(24)
+                            .background(Color("AccentBackgroundColor"))
+                            .cornerRadius(100)
+                            .clipShape(.circle)
                         Text(category.categoryName)
                             .foregroundColor(Color("PurpleTextColor"))
                             .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
