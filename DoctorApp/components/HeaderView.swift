@@ -19,7 +19,6 @@ struct HeaderView: View {
                     Text("greeting_first_part", comment: "Text")
                         .foregroundColor(Color("PurpleTextColor"))
                         .font(.custom("Poppins-Regular", size: 16, relativeTo: .body))
-                    
                     HStack {
                         Text("greeting_second_part", comment: "Text")
                             .foregroundColor(Color("BlackTextColor"))

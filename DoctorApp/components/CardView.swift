@@ -39,6 +39,7 @@ struct CardView: View {
                         .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
                 }
                 Spacer()
+                
                 if isMainCard {
                     Image("ic_arrow")
                 } else {
