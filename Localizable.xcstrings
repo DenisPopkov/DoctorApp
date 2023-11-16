@@ -68,6 +68,7 @@
       }
     },
     "greeting_first_part" : {
+      "comment" : "Text",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -78,6 +79,7 @@
       }
     },
     "greeting_second_part" : {
+      "comment" : "Text",
       "localizations" : {
         "en" : {
           "stringUnit" : {

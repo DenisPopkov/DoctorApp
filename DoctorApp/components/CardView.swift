@@ -14,8 +14,8 @@ struct CardView: View {
     var doctorDegreeColor: Color = .white
     var dividerColor: Color = Color("DividerColor")
     var doctorImageUrl: String = "ic_first_doctor"
-    var doctorName: String = "first_doctor_name"
-    var doctorDegree: String = "first_doctor_degree"
+    var doctorName: LocalizedStringKey = "first_doctor_name"
+    var doctorDegree: LocalizedStringKey = "first_doctor_degree"
     var isMainCard: Bool = true
     
     var body: some View {
@@ -30,11 +30,11 @@ struct CardView: View {
                     .padding(.trailing, 8)
                 
                 VStack(alignment: .leading) {
-                    Text(NSLocalizedString(doctorName, comment: ""))
+                    Text(doctorName, comment: "Text")
                         .foregroundColor(doctorNameColor)
                         .font(.custom("Poppins-Bold", size: 16, relativeTo: .title))
                     
-                    Text(NSLocalizedString(doctorDegree, comment: ""))
+                    Text(doctorDegree, comment: "Text")
                         .foregroundColor(doctorDegreeColor)
                         .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
                 }
@@ -43,7 +43,7 @@ struct CardView: View {
                     Image("ic_arrow")
                 } else {
                     Label {
-                        Text(NSLocalizedString("distance_label", comment: ""))
+                        Text("distance_label", comment: "Text")
                             .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
                             .foregroundColor(Color("PurpleTextColor"))
                     } icon: {
@@ -57,14 +57,14 @@ struct CardView: View {
             if isMainCard {
                 HStack {
                     Label {
-                        Text(NSLocalizedString("date_label", comment: ""))
+                        Text("date_label", comment: "Text")
                             .font(.custom("Poppins-Regular", size: 12, relativeTo: .body))
                             .foregroundColor(.white)
                     } icon: {
                         Image("ic_date_calendar")
                     }
                     Label {
-                        Text(NSLocalizedString("time_label", comment: ""))
+                        Text("time_label", comment: "Text")
                             .font(.custom("Poppins-Regular", size: 12, relativeTo: .body))
                             .foregroundColor(.white)
                     } icon: {
@@ -75,7 +75,7 @@ struct CardView: View {
             } else {
                 HStack {
                     Label {
-                        Text(NSLocalizedString("rating_label", comment: ""))
+                        Text("rating_label", comment: "Text")
                             .font(.custom("Poppins-Regular", size: 12, relativeTo: .body))
                             .foregroundColor(Color("ReviewItemTintColor"))
                     } icon: {
@@ -84,7 +84,7 @@ struct CardView: View {
                             .foregroundColor(Color("ReviewItemTintColor"))
                     }
                     Label {
-                        Text(NSLocalizedString("open_time_label", comment: ""))
+                        Text("open_time_label", comment: "Text")
                             .font(.custom("Poppins-Regular", size: 12, relativeTo: .body))
                             .foregroundColor(Color("TimeItemTintColor"))
                     } icon: {

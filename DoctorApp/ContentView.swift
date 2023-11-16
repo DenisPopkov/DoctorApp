@@ -15,7 +15,7 @@ struct ContentView: View {
                 CardView().padding(.top, 16)
                 SearchView().padding(.top, 14)
                 CategoryView().padding(.top, 18)
-                Text(NSLocalizedString("near_doctor_label", comment: ""))
+                Text("near_doctor_label", comment: "")
                     .foregroundColor(Color("NearBlackTextColor"))
                     .font(.custom("Poppins-SemiBold", size: 16, relativeTo: .title3))
                     .padding(.top, 24)

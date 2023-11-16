@@ -10,10 +10,10 @@ import SwiftUI
 struct CategoryView: View {
     
     var categoryList: [CategoryModel] = [
-        CategoryModel(imageUrl: "ic_covid", categoryName: NSLocalizedString("covid_label", comment: "")),
-        CategoryModel(imageUrl: "ic_profile", categoryName: NSLocalizedString("doctor_label", comment: "")),
-        CategoryModel(imageUrl: "ic_medicine", categoryName: NSLocalizedString("medicine_label", comment: "")),
-        CategoryModel(imageUrl: "ic_hospital", categoryName: NSLocalizedString("hospital_label", comment: "")),
+        CategoryModel(imageUrl: "ic_covid", categoryName: "covid_label"),
+        CategoryModel(imageUrl: "ic_profile", categoryName: "doctor_label"),
+        CategoryModel(imageUrl: "ic_medicine", categoryName: "medicine_label"),
+        CategoryModel(imageUrl: "ic_hospital", categoryName: "hospital_label"),
     ]
     
     var body: some View {
@@ -26,7 +26,7 @@ struct CategoryView: View {
                             .background(Color("AccentBackgroundColor"))
                             .cornerRadius(100)
                             .clipShape(.circle)
-                        Text(category.categoryName)
+                        Text(LocalizedStringKey(category.categoryName), comment: "Text")
                             .foregroundColor(Color("PurpleTextColor"))
                             .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
                             .padding(.top, 2)

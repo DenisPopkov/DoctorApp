@@ -16,18 +16,21 @@ struct HeaderView: View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text(NSLocalizedString("greeting_first_part", comment: ""))
+                    Text("greeting_first_part", comment: "Text")
                         .foregroundColor(Color("PurpleTextColor"))
                         .font(.custom("Poppins-Regular", size: 16, relativeTo: .body))
                     
-                    Text(NSLocalizedString("greeting_second_part", comment: "") + " \(userName)")
-                        .foregroundColor(Color("BlackTextColor"))
-                        .font(.custom("Poppins-Bold", size: 20, relativeTo: .title))
+                    HStack {
+                        Text("greeting_second_part", comment: "Text")
+                            .foregroundColor(Color("BlackTextColor"))
+                            .font(.custom("Poppins-Bold", size: 20, relativeTo: .title))
+                        Text(userName)
+                            .foregroundColor(Color("BlackTextColor"))
+                            .font(.custom("Poppins-Bold", size: 20, relativeTo: .title))
+                    }
                 }
                 Spacer()
                 Image(userLogoUrl)
-                    .resizable()
-                    .frame(width: 56, height: 56)
             }
         }
     }

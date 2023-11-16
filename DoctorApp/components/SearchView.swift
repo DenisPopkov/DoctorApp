@@ -11,7 +11,7 @@ struct SearchView: View {
     var body: some View {
         HStack {
             Label {
-                Text(NSLocalizedString("search_label", comment: ""))
+                Text("search_label", comment: "Text")
                     .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
                     .foregroundColor(Color("PurpleTextColor"))
                     .padding(.leading, 6)
