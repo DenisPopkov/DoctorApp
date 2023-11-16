@@ -38,6 +38,7 @@ struct CardView: View {
                         .foregroundColor(doctorDegreeColor)
                         .font(.custom("Poppins-Regular", size: 14, relativeTo: .body))
                 }
+                
                 Spacer()
                 
                 if isMainCard {
@@ -98,8 +99,7 @@ struct CardView: View {
             }
         }
         .padding(20)
-        .background(cardBackgroundColor)
-        .cornerRadius(12)
+        .background(cardBackgroundColor, in: RoundedRectangle(cornerRadius: 12))
     }
 }
 

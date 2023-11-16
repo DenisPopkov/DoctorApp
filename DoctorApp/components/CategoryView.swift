@@ -23,9 +23,7 @@ struct CategoryView: View {
                     VStack {
                         Image(category.imageUrl)
                             .padding(24)
-                            .background(Color("AccentBackgroundColor"))
-                            .cornerRadius(100)
-                            .clipShape(.circle)
+                            .background(Color("AccentBackgroundColor"), in: .circle)
                         Text(LocalizedStringKey(category.categoryName), comment: "Text")
                             .foregroundColor(Color("PurpleTextColor"))
                             .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))

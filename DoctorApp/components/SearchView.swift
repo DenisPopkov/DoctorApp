@@ -22,7 +22,7 @@ struct SearchView: View {
         }
         .padding(16)
         .background(Color("AccentBackgroundColor"))
-        .cornerRadius(12)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
 
