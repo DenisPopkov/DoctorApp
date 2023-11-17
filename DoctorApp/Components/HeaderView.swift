@@ -17,15 +17,15 @@ struct HeaderView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text("greeting_first_part", comment: "Text")
-                        .foregroundColor(Color("PurpleTextColor"))
-                        .font(.custom("Poppins-Regular", size: 16, relativeTo: .body))
+                        .foregroundColor(.purple)
+                        .font(.poppinsRegular16)
                     HStack {
                         Text("greeting_second_part", comment: "Text")
-                            .foregroundColor(Color("BlackTextColor"))
-                            .font(.custom("Poppins-Bold", size: 20, relativeTo: .title))
+                            .foregroundColor(.blackText)
+                            .font(.poppinsBold20)
                         Text(userName)
-                            .foregroundColor(Color("BlackTextColor"))
-                            .font(.custom("Poppins-Bold", size: 20, relativeTo: .title))
+                            .foregroundColor(.blackText)
+                            .font(.poppinsBold20)
                     }
                 }
                 Spacer()

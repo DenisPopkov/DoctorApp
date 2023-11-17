@@ -12,17 +12,17 @@ struct SearchView: View {
         HStack {
             Label {
                 Text("search_label", comment: "Text")
-                    .font(.custom("Poppins-Regular", size: 15, relativeTo: .body))
-                    .foregroundColor(Color("PurpleTextColor"))
-                    .padding(.leading, 6)
+                    .font(.poppinsRegular16)
+                    .foregroundColor(.purple)
+                    .padding(.leading, smallPadding6)
             } icon: {
                 Image("ic_magnifier")
             }
             Spacer()
         }
-        .padding(16)
-        .background(Color("AccentBackgroundColor"))
-        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .padding(mediumPadding16)
+        .background(.accentBackground)
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadius12))
     }
 }
 

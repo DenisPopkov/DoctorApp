@@ -13,7 +13,7 @@ enum TabbedItems: Int, CaseIterable {
     case chat
     case profile
     
-    var title: String{
+    var title: String {
         switch self {
         case .home:
             return "Home"
@@ -26,7 +26,7 @@ enum TabbedItems: Int, CaseIterable {
         }
     }
     
-    var iconName: String{
+    var iconName: String {
         switch self {
         case .home:
             return "ic_home"
@@ -62,7 +62,7 @@ struct MainTabbedView: View {
                 }
             }
             .background(.white)
-            .padding([.leading, .trailing], 24)
+            .padding([.leading, .trailing], bigPadding24)
         }
     }
 }
@@ -73,18 +73,18 @@ extension MainTabbedView {
             Spacer()
             Image(imageName)
                 .renderingMode(.template)
-                .foregroundColor(isActive ? Color("TabAccentColor") : Color("TabNotActiveAccentColor"))
+                .foregroundColor(isActive ? .tabAccent : .tabNotAccent)
             if isActive {
                 Text(title)
-                    .font(.custom("Nunito-Bold", size: 14, relativeTo: .title3))
-                    .foregroundColor(isActive ? Color("TabAccentColor") : .gray)
+                    .font(.nunitoBold14)
+                    .foregroundColor(isActive ? .tabAccent : .gray)
             }
             Spacer()
         }
-        .frame(width: isActive ? 95 : 65)
+        .frame(width: isActive ? activeTabHeight94 : notActiveTabHeight64)
         .frame(maxWidth: .infinity)
-        .frame(height: 48)
+        .frame(height: imageSize48)
         .background(isActive ? Color("TabViewActiveBarBackgroundColor") : .clear)
-        .cornerRadius(12)
+        .cornerRadius(cornerRadius12)
     }
 }
