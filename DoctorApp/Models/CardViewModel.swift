@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct CardViewModel {
-    var cardBackgroundColor: Color
-    var doctorNameColor: Color
-    var doctorDegreeColor: Color
-    var dividerColor: Color
-    var doctorImageUrl: String
-    var doctorName: LocalizedStringKey
-    var doctorDegree: LocalizedStringKey
-    var isMainCard: Bool
+    let cardBackgroundColor: Color
+    let doctorNameColor: Color
+    let doctorDegreeColor: Color
+    let dividerColor: Color
+    let doctorImageUrl: String
+    let doctorName: LocalizedStringKey
+    let doctorDegree: LocalizedStringKey
+    let isMainCard: Bool
     
     init(cardBackgroundColor: Color, doctorNameColor: Color, doctorDegreeColor: Color, dividerColor: Color, doctorImageUrl: String, doctorName: LocalizedStringKey, doctorDegree: LocalizedStringKey, isMainCard: Bool) {
         self.cardBackgroundColor = cardBackgroundColor

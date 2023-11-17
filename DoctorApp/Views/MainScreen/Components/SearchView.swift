@@ -11,12 +11,12 @@ struct SearchView: View {
     var body: some View {
         HStack {
             Label {
-                Text("search_label", comment: "Text")
+                Text(LocalizedStringKey.searchLabel, comment: "Text")
                     .font(.poppinsRegular16)
                     .foregroundColor(.purple)
                     .padding(.leading, smallPadding6)
             } icon: {
-                Image("ic_magnifier")
+                Image(ImageAsset.icMagnifier)
             }
             Spacer()
         }

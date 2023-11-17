@@ -19,14 +19,16 @@ struct CategoryView: View {
                         Image(category.imageUrl)
                             .padding(bigPadding24)
                             .background(.accentBackground, in: .circle)
-                        Text(LocalizedStringKey(category.categoryName), comment: "Text")
+                        Text(LocalizedStringKey(category.categoryName))
                             .foregroundColor(.purple)
                             .font(.poppinsRegular16)
                             .padding(.top, smallPadding2)
                     }
                 }
             }
-        }.frame(maxHeight: frameHeight100)
+        }
+        .frame(maxHeight: frameHeight100)
+        .hoverEffect(.lift)
     }
 }
 

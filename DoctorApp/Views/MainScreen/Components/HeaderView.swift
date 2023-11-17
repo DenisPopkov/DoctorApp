@@ -9,32 +9,31 @@ import SwiftUI
 
 struct HeaderView: View {
     
-    var userLogoUrl: String = "ic_user_logo"
-    var userName: String = "James"
-    
+    @Binding var userData: UserModel
+
     var body: some View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("greeting_first_part", comment: "Text")
+                    Text(LocalizedStringKey.greetingFirstPart, comment: "Text")
                         .foregroundColor(.purple)
                         .font(.poppinsRegular16)
                     HStack {
-                        Text("greeting_second_part", comment: "Text")
+                        Text(LocalizedStringKey.greetingSecondPart, comment: "Text")
                             .foregroundColor(.blackText)
                             .font(.poppinsBold20)
-                        Text(userName)
+                        Text(userData.userName)
                             .foregroundColor(.blackText)
                             .font(.poppinsBold20)
                     }
                 }
                 Spacer()
-                Image(userLogoUrl)
+                Image(userData.userImageUrl)
             }
         }
     }
 }
 
 #Preview {
-    HeaderView()
+    HeaderView(userData: .constant(UserModel.userData))
 }

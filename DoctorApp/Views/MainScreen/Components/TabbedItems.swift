@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum TabbedItems: Int, CaseIterable {
-    case home = 0
+    case home
     case calendar
     case chat
     case profile
@@ -16,26 +16,26 @@ enum TabbedItems: Int, CaseIterable {
     var title: String {
         switch self {
         case .home:
-            return "Home"
+            return LocalizedStringKey.tabHomeLabel
         case .calendar:
-            return "Date"
+            return LocalizedStringKey.tabDateLabel
         case .chat:
-            return "Chat"
+            return LocalizedStringKey.tabChatLabel
         case .profile:
-            return "Profile"
+            return LocalizedStringKey.tabProfileLabel
         }
     }
     
     var iconName: String {
         switch self {
         case .home:
-            return "ic_home"
+            return ImageAsset.icHome
         case .calendar:
-            return "ic_calendar"
+            return ImageAsset.icCalendar
         case .chat:
-            return "ic_message"
+            return ImageAsset.icMessage
         case .profile:
-            return "ic_contact"
+            return ImageAsset.icContact
         }
     }
 }
@@ -48,7 +48,10 @@ struct MainTabbedView: View {
         
         ZStack(alignment: .bottom) {
             TabView(selection: $selectedTab) {
-                ContentView().tag(0)
+                MainScreen().tag(0)
+                DateScreen().tag(1)
+                ChatScreen().tag(2)
+                ProfileScreen().tag(3)
             }
             ZStack {
                 HStack {
@@ -56,7 +59,7 @@ struct MainTabbedView: View {
                         Button {
                             selectedTab = item.rawValue
                         } label: {
-                            CustomTabItem(imageName: item.iconName, title: item.title, isActive: (selectedTab == item.rawValue))
+                            createCustomTabView(imageName: item.iconName, title: item.title, isActive: (selectedTab == item.rawValue))
                         }
                     }
                 }
@@ -68,8 +71,9 @@ struct MainTabbedView: View {
 }
 
 extension MainTabbedView {
-    func CustomTabItem(imageName: String, title: String, isActive: Bool) -> some View {
-        HStack {
+    func createCustomTabView(imageName: String, title: String, isActive: Bool) -> some View {
+        let backgroundColor: Color = isActive ? .activeTabBackground : .clear
+        return HStack {
             Spacer()
             Image(imageName)
                 .renderingMode(.template)
@@ -84,7 +88,7 @@ extension MainTabbedView {
         .frame(width: isActive ? activeTabHeight94 : notActiveTabHeight64)
         .frame(maxWidth: .infinity)
         .frame(height: imageSize48)
-        .background(isActive ? Color("TabViewActiveBarBackgroundColor") : .clear)
+        .background(backgroundColor)
         .cornerRadius(cornerRadius12)
     }
 }

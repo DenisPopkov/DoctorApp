@@ -35,55 +35,55 @@ struct CardView: View {
                 Spacer()
                 
                 if cardViewData.isMainCard {
-                    Image("ic_arrow")
+                    Image(ImageAsset.icArrow)
                 } else {
                     Label {
-                        Text("distance_label", comment: "Text")
+                        Text(LocalizedStringKey.distanceLabel, comment: "Text")
                             .font(.poppinsRegular14)
                             .foregroundColor(.purple)
                     } icon: {
-                        Image("ic_location")
+                        Image(ImageAsset.icLocation)
                     }
                 }
             }
             
-            Divider().overlay(cardViewData.dividerColor)
+            Divider().overlay(cardViewData.dividerColor).padding([.top, .bottom], smallPadding8)
             
             if cardViewData.isMainCard {
                 HStack {
                     Label {
-                        Text("date_label", comment: "Text")
+                        Text(LocalizedStringKey.dateLabel, comment: "Text")
                             .font(.poppinsRegular12)
                             .foregroundColor(.white)
                     } icon: {
-                        Image("ic_date_calendar")
+                        Image(ImageAsset.icDateCalendar)
                     }
                     Label {
-                        Text("time_label", comment: "Text")
+                        Text(LocalizedStringKey.timeLabel, comment: "Text")
                             .font(.poppinsRegular12)
                             .foregroundColor(.white)
                     } icon: {
-                        Image("ic_clock")
+                        Image(ImageAsset.icClock)
                     }
                     .padding(.leading, bigPadding24)
                 }
             } else {
                 HStack {
                     Label {
-                        Text("rating_label", comment: "Text")
+                        Text(LocalizedStringKey.ratingLabel, comment: "Text")
                             .font(.poppinsRegular12)
-                            .foregroundColor(Color("ReviewItemTintColor"))
+                            .foregroundColor(.reviewTint)
                     } icon: {
-                        Image("ic_clock")
+                        Image(ImageAsset.icClock)
                             .renderingMode(.template)
                             .foregroundColor(.reviewTint)
                     }
                     Label {
-                        Text("open_time_label", comment: "Text")
+                        Text(LocalizedStringKey.openTimeLabel, comment: "Text")
                             .font(.poppinsRegular12)
                             .foregroundColor(.timeTint)
                     } icon: {
-                        Image("ic_clock")
+                        Image(ImageAsset.icClock)
                             .renderingMode(.template)
                             .foregroundColor(.timeTint)
                     }
